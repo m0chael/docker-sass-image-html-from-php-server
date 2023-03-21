@@ -1,0 +1,10 @@
+$font-narrow: 'PT Sans NArrow', sans-serif;
+$font-spectral: 'Spectral SC', serif;
+$font-base-spectral: 'Spectral', serif;
+$layout-breakpoint: 1200px;
+
+body {
+  margin:0;
+  padding:0;
+  font-family: $font-base-spectral;
+}

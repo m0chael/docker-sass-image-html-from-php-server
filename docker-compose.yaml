@@ -1,0 +1,22 @@
+services:
+  app:
+    build: 
+      #imag: "michael-php-service-docker"
+      context: .
+    #image: php:7.4-cli
+    #command: sh -c "cd /app && php run.php"
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      SAMPLE_ENVIRO_VAR: test
+    ports: 
+      - "8080:8080"
+
+
+
+# build image with docker file and tag with "some_name_here_service" should match REPOSITORY name;
+
+# docker build -t some_name_here_service:latest .
+
+
